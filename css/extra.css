@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+.button-wrap{
+	border-color: #f1e800; 
+	
+	}
+
+.ui-btn-corner-all{-moz-border-radius:0;-webkit-border-radius: 0;border-radius: 0;}
+
+.p {
+	color: #000000;
+}
+
+.ui-block-m{
+	-moz-border-radius:0;-webkit-border-radius: 0;border-radius: 0;
+	}
+
+.google_cal { margin-left: 16px; }
+
+.google_cal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.google_cal li { margin-bottom: 18px;
+padding: 5px;
+border-radius: 10px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #aaaaaa;
+  border-right-color: #aaaaaa;
+  border-bottom-color: #aaaaaa;
+  border-left-color: #aaaaaa;
+  border-image-source: none;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-width: 1 1 1 1;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  color: #333333;
+  background-color: #d1b05d;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+
+
+
+}
+
+
+.google_cal a,
+.google_cal_2 a {
+  text-decoration: none;
+  color: #750000;
+}
+
+.google_cal a:hover,
+.google_cal_2 a:hover 
+
+{ color: #750000; }
+
+.google_cal a:visited,
+.google_cal_2 a:visited {
+    color: #750000;
+} 
+
+.google_cal .google_event_title,
+.google_cal_2 .google_event_title {
+  display: block;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: bold;
+      color: #8d2800;
+	  text-shadow: none;
+}
+
+.google_cal .google_event_date {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  	  text-shadow: none;
+}
+
+.google_cal .google_event_location {  
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+text-shadow: none;
+}
+
+.google_cal .google_event_description {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+
+text-shadow: none;
+}

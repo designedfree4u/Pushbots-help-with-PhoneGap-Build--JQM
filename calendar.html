@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>National Training Center</title> 
+    
+<link rel="stylesheet" type="text/css" href="css/extra.css">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/TanTheme.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/TanTheme.min.css">
+    
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+
+<script src="js/googleCalendarEvents.js"></script>
+
+
+</head>
+<body>
+<!--Messages-->
+
+<div data-role="page" id="calendar">
+
+	<div data-role="header">
+    <a class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-bars" href="#mypanel">Menu</a>
+		<h6>Community Calendar</h6>
+	</div><!-- /header -->
+
+
+<script type="text/javascript">
+$.GoogleCalendarEvents({
+feedUri: 'https://www.google.com/calendar/feeds/en.usa%23holiday%40group.v.calendar.google.com/public/full',
+element: '.google_cal',
+maxresults: 15,
+displayCount: false,
+dateLabel: "When:",
+locationLabel: "Where:",
+descriptionLabel: "About The Event:",
+groupDates: false
+});</script>
+       
+   
+
+
+	<div data-role="content">	
+
+       
+
+       
+       
+       
+       
+
+        <div class="google_cal"></div>
+     
+
+
+        
+	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h5>Report Hazards: - <a href="tel:+7603804444"> (760) 380-4444</a></h5>
+	</div>
+    <!-- /header -->
+<div data-role="panel" id="mypanel">
+   <h2>Navigation Menu</h2>
+<br>   
+<a href="#" onClick="window.open('index.html','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>Home</h3></font></span></a>
+
+
+   <a href="#" onClick="window.open('http://www.irwin.army.mil/app_android/calendar.html','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>Calendar</h3></font></span></a>
+
+
+   <a href="important_phone.html" rel="external"><font color="#E99100"><h3>Phone Numbers</h3></font></a>
+
+
+
+   <a href="http://www.irwin.army.mil/app_android/index.html" onClick="window.open('http://www.irwin.army.mil/PdfFiles/Facility_Hours_v9.14.15.pdf','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>Facility Hours</h3></font></span></a>
+   
+
+   <a href="http://www.irwin.army.mil/app_android/index.html" onClick="window.open('http://www.irwin.army.mil/PdfFiles/Fort_Irwin_Resource_Guide.pdf','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>Resource Guide</h3></font></span></a>
+
+   <a href="#" onClick="window.open('desertstrong.html','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>Desert Strong</h3></font></span></a>
+
+   <a href="#" onClick="window.open('map.html','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>Ft. Irwin Map</h3></font></span></a>
+   
+   <a href="#" onClick="window.open('policy.html','_blank','location=yes,closebuttoncaption=Done');"><font color="#E99100"><h3>NTC Policy</h3></font></span></a>
+   
+   <a href="socialmedia.html" rel="external" ><font color="#E99100"><h3>CMD Info</h3></font></a>
+
+   
+   </div><!-- /panel -->
+</div><!-- /page -->
+</body>
+</html>

@@ -1,0 +1,146 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>National Training Center</title> 
+<link rel="stylesheet" type="text/css" href="css/extra.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/TanTheme.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/TanTheme.min.css">
+
+
+<script type="text/javascript" src="js/index.js"></script>
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript" src="js/jssor.slider.js"></script>
+
+<script type="text/javascript" src="../app/js/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" src="js/jssor.js"></script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        var options = {};                            
+        var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+
+        //responsive code begin
+        //you can remove responsive code if you don't want the slider scales
+        //while window resizes
+        function ScaleSlider() {
+            var parentWidth = $('#slider1_container').parent().width();
+            if (parentWidth) {
+                jssor_slider1.$ScaleWidth(parentWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        //Scale slider after document ready
+        ScaleSlider();
+                                        
+        //Scale slider while window load/resize/orientationchange.
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        //responsive code end
+    });
+</script>
+</head> 
+
+<body> 
+
+<div data-role="page" id="home">
+
+	<div data-role="header">
+<img src="img/banner.jpg" style="width:100%">
+	</div><!-- /header -->
+
+
+<div class="ui-grid-a">
+ <div class="ui-block-a"><div class="button-wrap"> <a href="messages.html" data-role="button" rel="external" data-icon="alert" data-mini="true" data-transition="slidefade" data-direction="reverse">Messages</a>
+ </div></div>
+ 
+
+ <div class="ui-block-b"><div class="button-wrap"> 
+ <a href="#" onClick="window.open('http://www.irwin.army.mil/app_android/calendar.html','_blank','location=yes,closebuttoncaption=Done');" data-icon="grid" data-role="button" data-mini="true"> Calendar</span></a>
+ </div></div></div>
+    
+  
+
+<div>
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+    <!-- Slides Container -->
+    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+        <div>
+        
+        <a href="#" onClick="window.open('http://www.irwin.army.mil/app/img/pic1.jpg','_blank','location=yes,closebuttoncaption=Done');" data-icon="grid" data-role="button" data-mini="true"><img u="image" src="http://www.irwin.army.mil/app/img/pic1.jpg" /></a>
+        
+</div>
+        <div>
+        
+        <a href="#" onClick="window.open('http://www.irwin.army.mil/app/img/pic2.jpg','_blank','location=yes,closebuttoncaption=Done');" data-icon="grid" data-role="button" data-mini="true"><img u="image" src="http://www.irwin.army.mil/app/img/pic2.jpg" /></a>
+        
+        
+        
+      </div>
+        <div><a href="#" onClick="window.open('http://www.irwin.army.mil/app/img/pic3.jpg','_blank','location=yes,closebuttoncaption=Done');" data-icon="grid" data-role="button" data-mini="true"><img u="image" src="http://www.irwin.army.mil/app/img/pic3.jpg" /></a></div>
+    </div>
+    <!-- Trigger -->
+    <script>jssor_slider1_starter('slider1_container');</script>
+</div>
+</div>
+
+  
+  <div class="ui-grid-a">
+ <div class="ui-block-a"><div class="button-wrap"> <a href="important_phone.html" data-role="button" data-icon="grid" data-mini="true" rel="external" >Phone Numbers</a>
+ </div></div>
+        
+ <div class="ui-block-b"><div class="button-wrap"> 
+  <a href="http://www.irwin.army.mil/app_android/index.html" onClick="window.open('http://www.irwin.army.mil/PdfFiles/Facility_Hours_v9.14.15.pdf','_blank','location=yes,closebuttoncaption=Done');" data-icon="arrow-r" data-role="button" data-mini="true">Facility Hours</span></a>
+ </div></div></div>
+ 
+   <div class="ui-grid-a">
+ <div class="ui-block-a"><div class="button-wrap"> <a href="http://www.irwin.army.mil/app_android/index.html" onClick="window.open('http://www.irwin.army.mil/PdfFiles/Fort_Irwin_Resource_Guide.pdf','_blank','location=yes,closebuttoncaption=Done');" data-icon="arrow-r" data-role="button" data-mini="true">Resources</span></a>
+ </div></div>
+    
+<div class="ui-block-b"><div class="button-wrap"> 
+ <a href="#" onClick="window.open('desertstrong.html','_blank','location=yes,closebuttoncaption=Done');" data-icon="arrow-r" data-role="button" data-mini="true">Desert Strong</span></a>
+ </div></div></div>
+ 
+   <div class="ui-grid-a">
+  <div class="ui-block-a">
+    <div class="button-wrap"><a href="#" onClick="window.open('map.html','_blank','location=yes,closebuttoncaption=Done');" data-icon="arrow-r" data-role="button" data-mini="true">Ft. Irwin Map</span></a>
+ </div></div>
+ 
+<div class="ui-block-b"><div class="button-wrap"> 
+ <a href="#" onClick="window.open('policy.html','_blank','location=yes,closebuttoncaption=Done');" data-icon="arrow-r" data-role="button" data-mini="true">NTC Policy</span></a>
+ </div></div></div>
+    
+   <div class="ui-grid-a">
+  <div class="ui-block-a"><div class="button-wrap"> <a href="socialmedia.html" data-role="button" data-icon="info" data-mini="true" rel="external" >CMD Info</a>
+ </div></div>
+ 
+<div class="ui-block-b"><div class="button-wrap"> 
+ <a href="#" onClick="window.open('http://ice.disa.mil/index.cfm?fa=site&site_id=443&dep=DoD','_blank','location=yes,closebuttoncaption=Done');" data-icon="arrow-r" data-role="button" data-mini="true">ICE</span></a>
+ </div></div></div>
+
+
+<!-- /content -->
+
+
+	<div data-role="footer">
+		<h4>TRAIN THE FORCE</h4>
+	</div><!-- /footer -->
+	
+</div><!-- /page -->
+<!--Messages-->
+
+
+</body>
+</html>
